@@ -1,5 +1,5 @@
 /*****************************************************************************
-fromis_9 theme by Kakkela - version 0.1
+fromis_9 theme by Kakkela - version 0.1.1
 Support: https://discord.is/kakkcord
 *****************************************************************************/
 /*
@@ -12,7 +12,7 @@ Support: https://discord.is/kakkcord
 */
 
 .theme-dark {
-    --background-primary: transparent;
+    /*--background-primary: transparent;*/
     /*--background-secondary: none!important;*/
     --background-secondary-alt: none!important;
     --background-tertiary: none!important;
@@ -26,7 +26,10 @@ Support: https://discord.is/kakkcord
     --channeltextarea-background: rgba(100,100,100,.3);
     --deprecated-store-bg: transparent;
 }
-[class*="sidebar-"], [class*="membersWrap-"] {
+[class*="chat-"] {
+    --background-primary: none;
+}
+[class*="sidebar-"], [class*="membersWrap-"], [class*="sidebarRegionScroller-"], [class*="nowPlayingColumn-"] {
     --background-secondary: none!important;
 }
 [class*="embedWrapper-"] {
@@ -40,7 +43,7 @@ Support: https://discord.is/kakkcord
 .theme-dark .autocomplete-1vrmpx {
     background-color: rgba(30,30,30,.8);
 }
-[class*="app-"] [class*="layers-"] [class*="layer-"] [class*="container-"] [class*="base-"]>[class*="content-"]>[class*="container-"], [class*="app-"] [class*="layers-"] [class*="layer-"] [class*="container-"] [class*="base-"]>[class*="content-"]>[class*="root-"]   {
+[class*="app-"] [class*="layers-"] [class*="layer-"] [class*="container-"] [class*="base-"]>[class*="content-"]>[class*="container-"], [class*="app-"] [class*="layers-"] [class*="layer-"] [class*="container-"] [class*="base-"]>[class*="content-"]>[class*="root-"], [class*="chat-"], [class*="chat-"] [class*="title-"], [class*="chat-"] [class*="content-"], [class*="chat-"] [class*="messages-"], [class*="channelTextArea-"] {
     background-color: transparent;
 }
 [class*="appMount-"] {
@@ -73,6 +76,12 @@ Support: https://discord.is/kakkcord
 [class*="chat-"] form {
     margin-top: 6px;
 }
+[class*="chat-"] [class*="scroller-"]::after {
+    height: 10px;
+}
+[class*="chat-"] [class*="form-"]::before {
+    display:none;
+}
 
 /* Scrollbar tweaks */
 [class*="scrollerWrap-"] [class*="scroller-"]::-webkit-scrollbar-thumb {
@@ -87,7 +96,7 @@ Support: https://discord.is/kakkcord
 }
 
 /* Square avatars and server icons */
-[class*="avatar-"] [class*="wrapper-"], [class*="avatar-"] [class*="wrapper-"] img, [class*="avatarWrapper-"], [class*="avatarWrapper-"] [class*="wrapper-"], [class*="avatarWrapper-"] img, [class*="avatar"][class*="wrapper-"], [class*="avatar"][class*="wrapper-"] img, [class*="listAvatar"], [class*="listAvatar"] img, [class*="listItemWrapper"] img {
+[class*="avatar-"], [class*="avatar-"] [class*="wrapper-"], [class*="avatar-"] [class*="wrapper-"] img, [class*="avatarWrapper-"], [class*="avatarWrapper-"] [class*="wrapper-"], [class*="avatarWrapper-"] img, [class*="avatar"][class*="wrapper-"], [class*="avatar"][class*="wrapper-"] img, [class*="listAvatar"], [class*="listAvatar"] img, [class*="listItemWrapper"] img, [class*="icon-"] {
     border-radius: 8px;
 }
 [class*="avatar-"] [class*="wrapper-"] foreignObject, [class*="avatarWrapper-"] foreignObject, [class*="avatar"][class*="wrapper-"] foreignObject, [class*="listAvatar"] foreignObject, [class*="listItemWrapper"] foreignObject {
@@ -105,7 +114,7 @@ Support: https://discord.is/kakkcord
     margin-left: 2px;
     border-radius: 4px 0 0 4px;
 }
-[class*="listItem-"]:not(:first-child), [class^="layer-"]>[class*="container-"]>[class*="wrapper-"] [class*="scroller-"]>div {
+[class*="listItem-"]:not(:first-child) {
     width: 60px;
     margin: 4px 0 0 4px;
 }

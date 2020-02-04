@@ -13,7 +13,7 @@
 [class^="layer-"]>[class*="container-"]>[class*="wrapper-"] [class*="listItem-"], [class^="layer-"]>[class*="container-"]>[class*="wrapper-"] [class*="scroller-"]>div {
     float:left;
 }
-[class^="layer-"]>[class*="container-"]>[class*="wrapper-"]>[class*="scrollerWrap-"]>[class*="scroller-"]>[class*="listItem-"]:nth-of-type(2), [class^="layer-"]>[class*="container-"]>[class*="wrapper-"]>[class*="scrollerWrap-"]>[class*="scroller-"]>[style*="opacity: 1; height: 56px; transform: scale(1);"] + div {
+[class^="layer-"]>[class*="container-"]>[class*="wrapper-"]>[class*="scrollerWrap-"]>[class*="scroller-"]>[class*="listItem-"]:nth-of-type(2), [class^="layer-"]>[class*="container-"]>[class*="wrapper-"]>[class*="scrollerWrap-"]>[class*="scroller-"]>[style] + div {
     width: 250px;
     height: 10px;
 }
