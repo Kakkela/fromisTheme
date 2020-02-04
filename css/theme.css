@@ -96,7 +96,7 @@ Support: https://discord.is/kakkcord
 }
 
 /* Square avatars and server icons */
-[class*="avatar-"], [class*="avatar-"] [class*="wrapper-"], [class*="avatar-"] [class*="wrapper-"] img, [class*="avatarWrapper-"], [class*="avatarWrapper-"] [class*="wrapper-"], [class*="avatarWrapper-"] img, [class*="avatar"][class*="wrapper-"], [class*="avatar"][class*="wrapper-"] img, [class*="listAvatar"], [class*="listAvatar"] img, [class*="listItemWrapper"] img, [class*="icon-"] {
+[class*="avatar-"], [class*="avatar-"] [class*="wrapper-"], [class*="avatar-"] [class*="wrapper-"] img, [class*="avatarWrapper-"], [class*="avatarWrapper-"] [class*="wrapper-"], [class*="avatarWrapper-"] img, [class*="avatar"][class*="wrapper-"], [class*="avatar"][class*="wrapper-"] img, [class*="listAvatar"], [class*="listAvatar"] img, [class*="listItemWrapper"] img, [class*="emojiPicker-"] [class*="icon-"] {
     border-radius: 8px;
 }
 [class*="avatar-"] [class*="wrapper-"] foreignObject, [class*="avatarWrapper-"] foreignObject, [class*="avatar"][class*="wrapper-"] foreignObject, [class*="listAvatar"] foreignObject, [class*="listItemWrapper"] foreignObject {
