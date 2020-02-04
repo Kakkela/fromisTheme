@@ -1,0 +1,40 @@
+/* 3-column mods */
+[class^="layer-"]>[class*="container-"]>[class*="wrapper-"]{
+	width: 200px;
+    overflow:hidden;
+}
+[class^="layer-"]>[class*="container-"]>[class*="wrapper-"] [class*="scrollerWrap-"] {
+    width: 210px;
+}
+.bd-guild-separator {
+    width: 250px!important;
+    height: 5px!important;
+}
+[class^="layer-"]>[class*="container-"]>[class*="wrapper-"] [class*="listItem-"], [class^="layer-"]>[class*="container-"]>[class*="wrapper-"] [class*="scroller-"]>div {
+    float:left;
+}
+[class^="layer-"]>[class*="container-"]>[class*="wrapper-"]>[class*="scrollerWrap-"]>[class*="scroller-"]>[class*="listItem-"]:nth-of-type(2), [class^="layer-"]>[class*="container-"]>[class*="wrapper-"]>[class*="scrollerWrap-"]>[class*="scroller-"]>[style*="opacity: 1; height: 56px; transform: scale(1);"] + div {
+    width: 250px;
+    height: 10px;
+}
+[class^="layer-"]>[class*="container-"]>[class*="wrapper-"] [class*="guildSeparator-"] {
+	width: 250px;
+    height: 10px;
+    background:none;
+}
+[class^="layer-"]>[class*="container-"]>[class*="wrapper-"]>[class*="scrollerWrap-"]>[class*="scroller-"]>[style*="opacity: 1; height: 56px; transform: scale(1);"] {
+    width: 60px!important;
+}
+[class^="layer-"]>[class*="container-"]>[class*="wrapper-"] [class*="friendsOnline-"] {
+    width: 55px;
+    font-size: 8px;
+    margin-top: 50px;
+    padding-left: 44px;
+}
+[class^="layer-"]>[class*="container-"]>[class*="wrapper-"] [class*="scroller-"]>div:nth-child(1) {
+    margin-left: 68px;
+    margin-right:50px;
+}
+[class^="base-"] {
+    left: 200px;
+}
