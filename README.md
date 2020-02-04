@@ -1,7 +1,7 @@
 # fromisTheme
 [<img src="https://discordapp.com/api/guilds/246394994691145730/widget.png?style=shield">](https://discord.is/kakkcord)
 
-WORK IN PROGRESS - BetterDiscord theme based on fromis_9
+WORK IN PROGRESS - BetterDiscord theme based on fromis_9 - WORK IN PROGRESS
 
 
 ## How to install:
